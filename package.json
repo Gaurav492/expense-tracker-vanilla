@@ -1,0 +1,23 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaurav492/expense-tracker-vanilla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gaurav492/expense-tracker-vanilla/issues"
+  },
+  "homepage": "https://github.com/Gaurav492/expense-tracker-vanilla#readme",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "tippy.js": "^6.3.7"
+  }
+}

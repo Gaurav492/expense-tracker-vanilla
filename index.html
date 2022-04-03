@@ -8,40 +8,152 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>The Expense Tracker</title>
   </head>
   <body>
-    <div class="side-bar">
-      <div class="top">
-        <p class="logo">Expenser</p>
-      </div>
-      <ul class="center">
-        <li class="active">
+    <div
+      class="side-bar is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between py-6"
+    >
+      <ul class="top">
+        <li class="" id="home">
           <a href="#"><span class="material-icons">home</span></a>
         </li>
-        <li>
+        <li class="" id="history">
           <a href="pages/history.html"
             ><span class="material-icons">history</span></a
           >
         </li>
-        <li>
+        <li class="" id="review">
           <a href="./pages/preview.html"
             ><span class="material-icons">preview</span></a
           >
         </li>
       </ul>
 
-      <div class="bottom">
-        <p><span class="material-icons">logout</span></p>
+      <div class="bottom" id="logout">
+        <a class=""><span class="material-icons">logout</span></a>
       </div>
     </div>
-    <div class="home">
-      <form>
-        <input type="text" placeholder="Enter expense name..." />
-        <input type="number" placeholder="Enter expense amount..." />
-        <input type="submit" class="btn" />
-      </form>
+
+    <!-- MAIN HOME -->
+    <div class="home section">
+      <div class="top-section">
+        <nav class="navbar mb-6" style="background: transparent">
+          <div class="navbar-brand is-active">
+            <h1 class="navbar-item logo has-text-light">Track Expense</h1>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <img src="Ellipse.png" />
+            </div>
+          </div>
+        </nav>
+
+        <form
+          class="px-6 is-flex is-flex-direction-column is-align-content-center is-justify-content-center"
+          style="width: 50%; margin: 0 auto"
+        >
+          <div class="is-flex">
+            <input
+              class="input mr-5 is-flex-shrink-6"
+              type="text"
+              placeholder="Your Expense"
+            />
+            <input
+              class="input is-flex-shrink-6"
+              type="number"
+              placeholder="Expense Amount"
+            />
+          </div>
+          <button
+            style="width: 50%; margin: 0 auto"
+            class="button mt-5 is-align-self-center"
+          >
+            Add Expense
+          </button>
+        </form>
+      </div>
+      <div
+        class="bottom-section has-text-light is-flex is-align-items-start is-justify-content-space-between"
+      >
+        <div
+          class="left-section is-flex is-align-items-center is-justify-content-center"
+        >
+          <span class="material-icons">wallet</span>
+          <h2>125401</h2>
+        </div>
+        <div class="right-section py-6">
+          <div 
+            class="title is-flex is-align-items-start is-justify-content-center"
+            style="height: 10%"
+          >
+            <span class="material-icons">currency_rupee</span>
+            <p>Spent List</p>
+          </div>
+
+          <ul
+            class="expense-list is-flex is-flex-direction-column is-align-items-center is-justify-content-start"
+            style="height: 90%"
+          >
+            <li class="single-expense mb-5">
+              <span class="">Netflix</span>
+              <span class="expense-amount">149</span>
+            </li>
+
+            <li class="single-expense mb-5">
+              <span class="expense-name">Netflix</span>
+              <span class="expense-amount">149</span>
+            </li>
+
+            <li class="single-expense mb-5">
+              <span class="expense-name">Electricity Bill</span>
+              <span class="expense-amount">140090</span>
+            </li>
+
+            <li class="single-expense mb-5">
+              <span class="expense-name">Netflix</span>
+              <span class="expense-amount">149</span>
+            </li>
+
+            <li class="single-expense mb-5">
+              <span class="expense-name">Netflix</span>
+              <span class="expense-amount">149</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <!-- <script src="./sctipts/app.js"></script> -->
+    <!-- <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="./node_modules/tippy.js/dist/tippy.umd.js"></script> -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+      // With the above scripts loaded, you can call `tippy()` with a CSS
+      // selector and a `content` prop:
+      tippy("#home", {
+        content: "Home",
+        placement: "right",
+        theme: "translucent",
+      });
+      tippy("#history", {
+        content: "History",
+        placement: "right",
+        theme: "translucent",
+      });
+      tippy("#review", {
+        content: "Review",
+        placement: "right",
+        theme: "translucent",
+      });
+      tippy("#logout", {
+        content: "Logout",
+        placement: "right",
+        theme: "translucent",
+      });
+    </script>
   </body>
 </html>
