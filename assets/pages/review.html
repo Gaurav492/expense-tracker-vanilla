@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/Group 1.png" type="image/x-icon">
+    <link rel="stylesheet" href="/node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="../styles/review_styles.css" />
+    <title>Review | The Expense Tracker</title>
+  </head>
+  <body>
+    <div
+      class="side-bar is-flex is-flex-direction-column is-align-items-center is-justify-content-space-between py-6"
+    >
+      <ul class="top">
+        <li class="" id="home">
+          <a href="/index.html"><span class="material-icons">home</span></a>
+        </li>
+        <li class="" id="history">
+          <a href="./history.html"
+            ><span class="material-icons">history</span></a
+          >
+        </li>
+        <li class="" id="review">
+          <a href="./assets/pages/review.html"
+            ><span class="material-icons">preview</span></a
+          >
+        </li>
+      </ul>
+
+      <div class="bottom" id="logout">
+        <a class=""><span class="material-icons">logout</span></a>
+      </div>
+    </div>
+
+    <!-- MAIN HOME -->
+    <div class="home">
+      <div class="home section">
+        <div class="top-section">
+          <nav class="navbar mb-6" style="background: transparent">
+            <div class="navbar-brand is-active">
+              <h1 class="navbar-item logo has-text-light">Track Expense</h1>
+            </div>
+            <div class="navbar-menu">
+              <div class="navbar-end">
+                <img src="/Ellipse.png" />
+              </div>
+            </div>
+          </nav>
+        </div>
+
+  
+    </div>
+
+        <!-- <script src="./sctipts/app.js"></script> -->
+    <!-- <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="./node_modules/tippy.js/dist/tippy.umd.js"></script> -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+      // With the above scripts loaded, you can call `tippy()` with a CSS
+      // selector and a `content` prop:
+      tippy("#home", {
+        content: "Home",
+        placement: "right",
+        theme: "translucent",
+      });
+      tippy("#history", {
+        content: "History",
+        placement: "right",
+        theme: "translucent",
+      });
+      tippy("#review", {
+        content: "Review",
+        placement: "right",
+        theme: "translucent",
+      });
+      tippy("#logout", {
+        content: "Logout",
+        placement: "right",
+        theme: "translucent",
+      });
+    </script>
+  </body>
+</html>
